@@ -89,6 +89,9 @@ import javax.annotation.Generated;
 
         @Override
         public void writeToParcel(@NonNull Parcel dest, int flags) {
-
+                dest.writeValue(page);
+                dest.writeValue(totalPages);
+                dest.writeValue(totalResults);
+                dest.writeList(results);
         }
     }

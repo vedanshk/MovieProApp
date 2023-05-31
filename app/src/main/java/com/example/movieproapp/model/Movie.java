@@ -239,11 +239,11 @@ public class Movie extends BaseObservable implements Parcelable {
         dest.writeValue(posterPath);
         dest.writeValue(originalLanguage);
         dest.writeValue(originalTitle);
-        dest.writeValue(genreIds);
         dest.writeValue(backdropPath);
         dest.writeValue(adult);
         dest.writeValue(overview);
         dest.writeValue(releaseDate);
+        dest.writeList(genreIds);
 
     }
 }

@@ -21,8 +21,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MovieRepository {
 
     private ArrayList<Movie> movies = new ArrayList<>();
-    private MutableLiveData<List<Movie>> mutableLiveData = new MutableLiveData<>();
-    private Application application;
+    private final MutableLiveData<List<Movie>> mutableLiveData = new MutableLiveData<>();
+    private final Application application;
 
     public MovieRepository(Application application) {
         this.application = application;
